@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <form>
+            <h2> Formulario de contacto </h2>
+
+            <!--SIMPLE INPUTS -->
+            <div class="form_input ">
+                <label>Nombre completo
+                    <input type="text" placeholder="John Doe">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Email
+                    <input type="email" placeholder="ejempo@gmail.com">
+                </label>
+            </div>
+
+        <!--SELECT Y OPTION-->
+        <div class="form_input">
+            <label> TIPO DE USUARIO
+            <select name="type-of-user">
+                <option value="user1">SEGUIDOR </option>
+                <option value="user2">EMPRESA </option>
+                <option value="user3">OTROS</option>
+            </select>
+        </label>
+        </div>
+
+        <!--DATALIST  Y OPTION-->
+        <div class="form_input">
+            <label> REFERENTE
+            <input list="referente" name="referente">
+            <datalist  id="referente" name="type-of-user">
+                <option value="user1">Soy dalto </option>
+                <option value="user2">Una empresa </option>
+                <option value="user3">un amigo</option>
+
+            </select>
+        </label>
+        </div>
+
+        <!-- TEXTAREA -->
+        <div class="form_input">
+            <label> MENSAJE
+                <textarea rows="8" placeholder="deja tu mensaje...."></textarea>
+        </label>
+       
+        </div>
+         <div class="form_input">
+            <label> Acepto los terminos y condiciones 
+                <input type="checkbox" class="checbox">
+            </label>
+
+        </div>
+    </form>
+
+    </body>
+</html>
